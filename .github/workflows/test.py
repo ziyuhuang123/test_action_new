@@ -19,8 +19,8 @@ name_list = args.fileNameList.split("&&&@@@")
 folder_need_check = []
 for loc in name_list:
     if loc.split("/")[0] == "examples":
-        if loc.split("/")[1] not in folder_need_check:
-            folder_need_check.append(loc.split("/")[1])
+        if loc.split("/")[1] + "/" + loc.split("/")[2] not in folder_need_check:
+            folder_need_check.append(loc.split("/")[1] + "/" + loc.split("/")[2])
 
 
 print(folder_need_check, 'folder_need_check')
@@ -30,7 +30,7 @@ print(folder_need_check, 'folder_need_check')
 
 import subprocess
 for dir in folder_need_check:
-    command = "sh" + "examples/" + dir + "/test_ci.sh"
+    command = "sh " + "examples/" + dir + "/test_ci.sh"
 
     # 执行命令
     process = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
