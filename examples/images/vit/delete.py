@@ -4,6 +4,6 @@ a = np.array(2)
 b = np.array(1)
 c = a-b
 print(c)
-d = 22111
+d = 221111
 print('this is vit')
 
