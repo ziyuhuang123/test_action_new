@@ -45,9 +45,9 @@ jobs:
           res1=($res)
           echo "$res is"
           echo ${#res1[@]}
-          for ii in ${{res1}}; do
-            echo "${ii} haha"
-          done
+#          for ii in ${{res1}}; do
+#            echo "${ii} haha"
+#          done
 #          for loc in ${{res}}; do
 #            cd "examples/${loc}"
 #            sh test_ci.sh
