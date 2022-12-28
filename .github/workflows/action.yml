@@ -41,4 +41,4 @@ jobs:
             changedFileName="${file}&&&@@@${changedFileName}"
           done
           echo "$changedFileName was changed"
-          python .github/workflows/test.py --fileNameList $changedFileName
+          res = "python .github/workflows/test.py --fileNameList $changedFileName"
