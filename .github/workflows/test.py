@@ -23,7 +23,8 @@ for loc in name_list:
             folder_need_check.append(loc.split("/")[1] + "/" + loc.split("/")[2])
 
 
-print(folder_need_check)
+for i in folder_need_check:
+    print(i)
 
 
 
