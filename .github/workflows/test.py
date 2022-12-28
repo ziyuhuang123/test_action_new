@@ -4,10 +4,14 @@ import argparse
 parser = argparse.ArgumentParser()
 
 # 在参数构造器中添加两个命令行参数
-parser.add_argument('--filename', type=str, default='Siri2')
-parser.add_argument('--message', type=str, default=',Welcom to Python World!')
+parser.add_argument('--fileNameList', type=str, default='Siri2')
+# parser.add_argument('--message', type=str, default=',Welcom to Python World!')
 
 # 获取所有的命令行参数
 args = parser.parse_args()
 
-print('Hi ' + str(args.filename) + str(args.message))
+# end_name = str(args.filename).split(".")[-1]
+#
+# print('Hi ' + str(args.fileNameList) + str(args.message))
+
+print(args.fileNameList)

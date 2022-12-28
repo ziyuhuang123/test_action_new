@@ -29,7 +29,9 @@ jobs:
 
       - name: List all added files
         run: |
-          for file in ${{ steps.changed-files.outputs.all_changed_files  }}; do
-            echo "$file was changed"
-            python .github/workflows/test.py --filename $file
-          done
+          echo "haha"
+          python .github/workflows/test.py --fileNameList ${ steps.changed-files.outputs.all_changed_files  }
+#          for file in ${{ steps.changed-files.outputs.all_changed_files  }}; do
+#            echo "$file was changed"
+#            python .github/workflows/test.py --filename $file
+#          done
