@@ -14,4 +14,12 @@ args = parser.parse_args()
 #
 # print('Hi ' + str(args.fileNameList) + str(args.message))
 
-print(args.fileNameList)
+name_list = args.fileNameList.split("   ")
+folder_need_check = []
+for loc in name_list:
+    print(loc.split("/"))
+    if loc.split("/")[0] == "examples":
+        if loc.split("/")[1] not in folder_need_check:
+            folder_need_check.append(loc.split("/")[1])
+
+print(folder_need_check, 'folder_need_check')
