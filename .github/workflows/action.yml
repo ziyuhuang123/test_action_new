@@ -8,9 +8,9 @@ on:
       - main
   # Compare the last commit of main -> to the current commit of a PR branch.
   # (Note: To compare changes between the last pushed commit to the remote PR branch set `since_last_remote_commit: true`)
-  pull_request:
-    branches:
-      - main
+#  pull_request:
+#    branches:
+#      - main
 
 
 jobs:
@@ -30,5 +30,5 @@ jobs:
       - name: List all added files
         run: |
           for file in ${{ steps.changed-files.outputs.all_changed_files  }}; do
-            echo "$file was changedd"
+            echo "$file was changed"
           done
