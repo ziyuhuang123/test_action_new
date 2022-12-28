@@ -23,29 +23,29 @@ for loc in name_list:
             folder_need_check.append(loc.split("/")[1] + "/" + loc.split("/")[2])
 
 
-print(folder_need_check, 'folder_need_check')
+print(folder_need_check)
 
 
 
 
-import subprocess
-for dir in folder_need_check:
-    command = "sh " + "examples/" + dir + "/test_ci.sh"
-    print(command)
-    # 执行命令
-    process = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-
-    # 等待命令执行完成
-    process.wait()
-
-    # 获取命令的输出和错误信息
-    output = process.stdout.read()
-    error = process.stderr.read()
-
-    # 将输出和错误信息解码为字符串
-    output = output.decode(encoding="gbk")
-    error = error.decode(encoding="gbk")
-
-    # 返回命令的输出和错误信息
-    result = {"output": output, "error": error}
-    print(result)
+# import subprocess
+# for dir in folder_need_check:
+#     command = "sh " + "examples/" + dir + "/test_ci.sh"
+#     print(command)
+#     # 执行命令
+#     process = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+#
+#     # 等待命令执行完成
+#     process.wait()
+#
+#     # 获取命令的输出和错误信息
+#     output = process.stdout.read()
+#     error = process.stderr.read()
+#
+#     # 将输出和错误信息解码为字符串
+#     output = output.decode(encoding="gbk")
+#     error = error.decode(encoding="gbk")
+#
+#     # 返回命令的输出和错误信息
+#     result = {"output": output, "error": error}
+#     print(result)
