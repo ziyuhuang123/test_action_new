@@ -15,14 +15,7 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
           
 
-      # Example 1
       - name: Traverse all files
-        id: changed-files
-        uses: tj-actions/changed-files@v35
-        with:
-          since_last_remote_commit: true  # Important! Last time without this and workflow can not show the changed files!
-
-      - name: List all added files
         run: |
           dir=`ls examples/` #定义遍历的目录
           for i in $dir
