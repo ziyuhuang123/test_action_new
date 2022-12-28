@@ -1,1 +1,1 @@
-python ./dele.py
+python examples/languages/gpt/dele.py
