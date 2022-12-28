@@ -14,7 +14,7 @@ print('22')
 #
 # print('Hi ' + str(args.fileNameList) + str(args.message))
 
-name_list = args.fileNameList.split("   ")
+name_list = args.fileNameList.split("111")
 print(name_list, 'name_list')
 folder_need_check = []
 for loc in name_list:
