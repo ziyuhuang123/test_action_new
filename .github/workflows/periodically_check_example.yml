@@ -17,8 +17,8 @@ jobs:
 
       - name: Traverse all files
         run: |
-          pwd
-#          dir=/examples
-#          for file in $dir/*; do
-#            echo $file
-#          done
+          current_abs_dir = pwd
+          dir="${current_abs_dir}/examples"
+          for file in $dir/*; do
+            echo $file
+          done
