@@ -19,6 +19,7 @@ jobs:
         run: |
           current_abs_dir=`pwd`
           dir="${current_abs_dir}/examples"
+          echo "${dir} is"
           for file in `ls dir`; do
             echo $file
           done
