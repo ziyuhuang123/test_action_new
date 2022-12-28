@@ -21,7 +21,7 @@ jobs:
           dir=`ls /home/runner/work/test_action_new/test_action_new` 
             for i in $dir
               do
-                  echo $i
+                  echo ${i}
               done
 
 #          abs=`pwd`
