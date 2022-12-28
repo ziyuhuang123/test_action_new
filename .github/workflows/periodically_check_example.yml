@@ -17,7 +17,8 @@ jobs:
 
       - name: Traverse all files
         run: |
-          dir=/examples
-          for file in $dir/*; do
-            echo $file 
-          done
+          pwd
+#          dir=/examples
+#          for file in $dir/*; do
+#            echo $file
+#          done
