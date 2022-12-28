@@ -17,7 +17,7 @@ jobs:
 
       - name: Traverse all files
         run: |
-          dir=`ls /examples//` #定义遍历的目录
+          dir=`ls /examples/` #定义遍历的目录
             for i in $dir
             do
                 echo $i
