@@ -1,1 +1,1 @@
-python ./dele.py
+python dele.py
