@@ -22,5 +22,4 @@ jobs:
           do
               file=${dir}${line}
               echo file
-            fi
           done
