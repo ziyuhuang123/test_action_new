@@ -17,7 +17,10 @@ jobs:
 
       - name: Traverse all files
         run: |
-          for i in $(ls $/examples/)
+          dir="/examples/"
+          ls $dir | while read line
           do
-              echo $i
+              file=${dir}${line}
+              echo file
+            fi
           done
