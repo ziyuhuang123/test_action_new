@@ -20,6 +20,6 @@ jobs:
           abs=`pwd`
           dir=`ls ${abs}` #定义遍历的目录
             for i in $dir
-            do
-                echo $i
-            done
+              do
+                  echo $i
+              done
