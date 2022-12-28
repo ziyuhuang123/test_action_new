@@ -42,3 +42,4 @@ jobs:
           done
           echo "$changedFileName was changed"
           res = "python .github/workflows/test.py --fileNameList $changedFileName"
+          echo "$res is"
