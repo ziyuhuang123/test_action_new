@@ -18,7 +18,7 @@ jobs:
       - name: Traverse all files
         run: |
           current_abs_dir=`pwd`
-          dir="${current_abs_dir}/examples"
+          dir="${current_abs_dir}/examples/"
           echo "${dir} is"
           for file in `ls dir`; do
             echo $file
