@@ -48,7 +48,7 @@ jobs:
           for ii in ${res1[*]}; do
             cd "examples/${ii}"
             sh test_ci.sh
-            cd ../..
+            cd ../../..
             echo "${ii} haha"
           done
 #          for loc in ${{res}}; do
