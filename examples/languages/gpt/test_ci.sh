@@ -1,1 +1,1 @@
-python examples/languages/gpt/dele.py
+python dele.py
