@@ -18,6 +18,7 @@ jobs:
       - name: Traverse all files
         run: |
           abs=`pwd`
+          echo "${abs} aaa"
           dir=`ls ${abs}` #定义遍历的目录
             for i in $dir
               do
