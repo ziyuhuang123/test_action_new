@@ -22,10 +22,11 @@ jobs:
       - name: Traverse all files
         run: |
           dir=`ls ${PWD}/examples` 
-            for i in $dir
-              do
-                  echo ${i}
-              done
-
-#          abs=`pwd`
-#          echo "${abs} aaa"
+          for i in $dir
+            do
+                dir1=`ls ${PWD}/examples/${i}` 
+                for j in $dir1
+                  do
+                    echo "$j haha"
+                  done
+            done
