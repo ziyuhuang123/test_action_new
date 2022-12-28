@@ -17,10 +17,12 @@ jobs:
 
       - name: Traverse all files
         run: |
-          abs=`pwd`
-          echo "${abs} aaa"
-          dir=`ls ${abs}` #定义遍历的目录
+
+          dir=`ls /home/runner/work/test_action_new/test_action_new` #定义遍历的目录
             for i in $dir
               do
                   echo $i
               done
+          
+#          abs=`pwd`
+#          echo "${abs} aaa"
