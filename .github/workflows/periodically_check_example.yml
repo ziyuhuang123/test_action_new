@@ -28,7 +28,7 @@ jobs:
                 for j in $dir1
                   do
                     echo "$j haha"
-                    cd "${PWD}/examples/${j}"
+                    cd "${PWD}/examples/${i}/${j}"
                     sh test_ci.sh
                     cd ../../..
                   done
