@@ -18,7 +18,7 @@ jobs:
       - name: Traverse all files
         run: |
 
-          dir=`ls /home/runner/work/test_action_new/test_action_new` 
+          dir=`ls ${PWD}` 
             for i in $dir
               do
                   echo ${i}
