@@ -17,9 +17,7 @@ jobs:
 
       - name: Traverse all files
         run: |
-          dir="/examples/"
-          ls $dir | while read line
-          do
-              file=${dir}${line}
-              echo file
+          dir=/examples
+          for file in $dir/*; do
+            echo $file 
           done
