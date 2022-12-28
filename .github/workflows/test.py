@@ -31,7 +31,7 @@ print(folder_need_check, 'folder_need_check')
 import subprocess
 for dir in folder_need_check:
     command = "sh " + "examples/" + dir + "/test_ci.sh"
-
+    print(command)
     # 执行命令
     process = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
